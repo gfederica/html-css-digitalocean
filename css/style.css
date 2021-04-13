@@ -3,12 +3,37 @@
     margin: 0 auto;
     padding: 0;
 }
-
 body {
     font-family: 'Inter', sans-serif;
 }
 
 
+/* commons */
+.ms_wrapper_85 {
+    width: 85%;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 58px;
+}
+header h1 {
+    color: white;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+header h4:not(.ms_wrapper_85 h4) {
+    font-weight: 500;
+    line-height: 34px;
+    color: #A7BEFF;
+}
+
+
+/* buttons */
 .btn {
     font-weight: 600;
     font-size: 16px;
@@ -20,6 +45,7 @@ body {
     margin-left: 6px;
 
 }
+
 
 
 /* nav */
@@ -64,6 +90,21 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
     color: #2687FD;
 }
+
+/* jumbotron */
+
+#jumbotron {
+    margin-top: 80px;
+    background-color: wheat;
+}
+
+ #ms_jumbotron_wrapper {
+    background-color: white;
+    border-radius: 8px;  
+}
+
+
+
 
 
 
