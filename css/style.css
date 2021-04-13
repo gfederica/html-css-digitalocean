@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+}
+#ms_nav_btn {
+    border: 1px solid #2687FD;
+    background-color: transparent;
+    color: #2687FD;
+    margin-left: 6px;
+
+}
+
+
+/* nav */
+.navbar-brand {
+    height: 80px;
+    line-height: 80px;
+    padding-top: 22px;
+}
+.navbar-brand img {
+    width: 100%;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border: 0px;
+}
+.navbar-default {
+    background-color: white;
+    color: #031B4E;
+}
+.navbar-right li a,
+.navbar-left li a {
+    line-height: 80px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.navbar-right li {
+    line-height: 80px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #031B4E;
+}
+.navbar-nav>li>a>i {
+    margin-left: 4px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #2687FD;
+}
+
+
+
+ /* nav from phone
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: white;
+    height: 260px;
+}
+.navbar-default .navbar-toggle {
+    margin-top: 22px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form  {
+border: 0px  ;
+} */
+
