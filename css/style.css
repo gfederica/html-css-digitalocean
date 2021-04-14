@@ -23,8 +23,8 @@ header h1 {
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     color: #031B4E;
     text-align: center;
 }
@@ -32,7 +32,7 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 500;
-    color: #8B8B8B;
+    color: #79849D;
     text-align: center;
 }
 
@@ -48,18 +48,32 @@ header h4:not(.ms_wrapper_85 h4) {
 
 h5 {
     font-size: 16px;
-    font-weight: 600;
-    color: #8B8B8B;
+    font-weight: 700;
+    color: #79849D;
     margin: 0;
 }
 
+p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #79849D;
+}
+
 .ms_grey_text {
-    color: #8B8B8B;
+    color: #79849D;
 }
 .ms_blue_text {
     color: #2687FD;
 }
+.ms_dark_blue_text {
+    color: #031B4E;
+}
 
+.ms_wrapper_85::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 /* buttons */
@@ -196,12 +210,27 @@ h5 {
     margin-top: 60px;
 }
 #process h4 {
-    text-align: center;
-    color: #8B8B8B;
+    font-size: 20px;
+    color: #79849D;
 }
 
+#process ul li {
+    list-style-type: none;
+    padding: 6px;
+    border-left: 1px solid #79849D;
+}
 
+#process .ms_wrapper_85 {
+    margin-top: 40px;
+}
 
+.ms_cell {
+    height: 220px;
+}
+.ms_cell img,
+.ms_cell h5 {
+    margin-bottom: 10px;
+}
 
 
 
@@ -255,6 +284,12 @@ border: 0px  ;
     .navbar-brand img {
         max-width: 180px;
         margin-left: 0px;
+    }
+
+    /* process section */
+    .ms_cell {
+        margin: 20px auto;
+        height: max-content;
     }
 }
 
