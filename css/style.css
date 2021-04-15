@@ -17,12 +17,8 @@ body {
 .ms_wrapper_65 {
     width: 65%;
     padding: 10px;
-}
-.ms_wrapper_85::after,
-.ms_wrapper_65::after {
-    content: "";
-    display: table;
-    clear: both;
+    margin-top: 60px;
+    height: 400px;
 }
 
 h1 {
@@ -78,6 +74,16 @@ p {
 }
 .ms_dark_blue_text {
     color: #031B4E;
+}
+.ms_white_text {
+    color: #FFFFFF;
+}
+.ms_aqua_text {
+    color: #00B3CC;
+}
+
+.ms_weight_500 {
+    font-weight: 500;
 }
 
 
@@ -241,7 +247,7 @@ p {
 }
 
 
-/* carousel */
+/* carousel - common properties with section stories */
 
 #ms_carousel {
     padding-top: 60px;
@@ -257,11 +263,6 @@ p {
     padding-top: 10px;
 }
 
-#ms_carousel .ms_wrapper_65 {
-    margin-top: 60px;
-    position: relative;
-    height: 400px;
-}
 .fa-angle-right {
    vertical-align: middle;
    line-height: 400px;
@@ -277,7 +278,8 @@ p {
     color: #6F7B97;
 }
 
-#ms_carousel ul li {
+#ms_carousel ul li,
+#ms_stories ul li {
     display: inline-block;
     list-style-type: none;
     font-size: 12px;
@@ -294,6 +296,52 @@ p {
 }
 
 /* regions */
+#ms_regions {
+    background: rgb(0,71,197);
+    background: linear-gradient(180deg, rgba(0,71,197,1) 0%, rgba(0,26,130,1) 100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ms_grid .row:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+
+.ms_grid {
+    margin: 0 10px;
+}
+
+/* stories */
+#ms_stories {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F3F5F9;
+}
+
+#ms_stories img {
+    width: 50%;
+}
+
+.ms_nested_element {
+    background-color: white;
+    padding: 60px 0;
+    border-radius: 4px;
+}
+
+.ms_nested_element h4 {
+    padding: 10px 0;
+}
+.ms_nested_element h5:last-of-type {
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -315,8 +363,11 @@ p {
     #ms_features .ms_cell {
         margin-top: 30px;
     }
-}
 
+    .ms_grid {
+        margin: 0px 10px 50px;
+    }
+}
 
 @media (max-width: 990px) {
     .navbar-header {
