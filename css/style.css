@@ -92,16 +92,22 @@ p {
 /* buttons */
 .btn {
     font-weight: 600;
-    font-size: 16px;
 }
 #ms_nav_btn {
     border: 1px solid #2687FD;
     background-color: transparent;
     color: #2687FD;
     margin-left: 6px;
+    font-size: 16px;
 
 }
-
+#ms_start_btn {
+    background-color: white;
+    color: #2687FD;
+    margin-top: 20px;
+    padding: 10px 12px;
+    font-size: 18px;
+}
 
 
 /* nav */
@@ -296,7 +302,8 @@ p {
 }
 
 /* regions */
-#ms_regions {
+#ms_regions,
+#ms_get_started {
     background: rgb(0,71,197);
     background: linear-gradient(180deg, rgba(0,71,197,1) 0%, rgba(0,26,130,1) 100%);
     padding-top: 60px;
