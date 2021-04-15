@@ -56,6 +56,22 @@ h5 {
     margin: 0;
 }
 
+footer h5 {
+    font-weight: 600;
+    color: #7A859D;
+}
+
+footer a {
+    color: #7A859D;
+}
+
+.ms_footer_list_title h5 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
 p {
     font-size: 16px;
     font-weight: 600;
@@ -64,6 +80,9 @@ p {
 
 .ms_grey_text {
     color: #79849D;
+}
+.ms_dark_grey_text {
+    color: #516081;
 }
 .ms_light_blue_text {
     color: #A7BEFF;
@@ -99,6 +118,7 @@ p {
     color: #2687FD;
     margin-left: 6px;
     font-size: 16px;
+    transition: 0.3s;
 
 }
 #ms_start_btn {
@@ -107,7 +127,36 @@ p {
     margin-top: 20px;
     padding: 10px 12px;
     font-size: 18px;
+    transition: 0.3s;
 }
+
+/* hover */
+.ms_blue_text:hover {
+    text-decoration: none;
+    color: #031B4E;
+}
+#ms_nav_btn:hover {
+    color: white;
+    background-color: #2687FD;
+}
+#ms_account_jumbotron:hover {
+    opacity: 1;
+}
+#ms_google_icon_container:hover {
+    background-color: white;
+    opacity: 1;
+}
+
+#ms_start_btn:hover {
+    opacity: 0.6;
+}
+
+footer a:hover,
+footer a i:hover {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 /* nav */
@@ -224,6 +273,11 @@ p {
 #ms_sponsor .container {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#ms_sponsor img {
+    max-width: 90%;
+    max-height: 100px;
 }
 
 #ms_no_padding {
@@ -344,7 +398,34 @@ p {
 
 
 
+/* footer */
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #031C4E;
+}
 
+#ms_small_logo {
+   margin-bottom: 14px;
+}
+
+footer i {
+    color: #7A859D;
+    font-size: 24px;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+#ms_footer_right_section ul li {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 
 
 
@@ -374,6 +455,12 @@ p {
     .ms_grid {
         margin: 0px 10px 50px;
     }
+
+   .ms_footer_list_title h5 {
+       padding-top: 20px;
+   }
+   .navbar-brand img {
+    padding-top: 3px;
 }
 
 @media (max-width: 990px) {
@@ -412,6 +499,16 @@ p {
         margin: 20px auto;
         height: max-content;
     }
+
+    #ms_footer_right_section {
+        margin-top: 20px;
+    }
+
+    .navbar-brand img {
+        width: 100%;
+        line-height: 80px;
+        vertical-align: middle;
+        padding-top: 3px;
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {

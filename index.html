@@ -35,16 +35,49 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <div class="col-md-5">
                         <ul class="nav navbar-nav navbar-left">
-                            <li><a href="#">Products<i class="fas fa-angle-down"></i></a></li>
+                            <!-- dropdown list item -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<i class="fas fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                </ul>
+                              </li>
+                              <!-- /dropdown list item -->
                             <li><a href="#">Customers</a></li>
-                            <li><a href="#">Community<i class="fas fa-angle-down"></i></a></li> 
+                            <!-- dropdown list item -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<i class="fas fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                                </ul>
+                              </li>
+                              <!-- /dropdown list item -->
                             <li><a href="#">Pricing</a></li>
                         </ul>
                         </div>
                         <div class="col-md-5">
                         <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Docs</a></li>
-                        <li><a href="#">Support<i class="fas fa-angle-down"></i></a></li>
+                        <!-- dropdown list item -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support<i class="fas fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </li>
+                          <!-- /dropdown list item -->
                         <li><a href="#">Login</a></li> 
                         <li><button class="btn" id="ms_nav_btn">Sign Up</button></li>
                         <!-- <li class="ms_btn" id="ms_nav_btn"><a href="#">Sign Up</a></li> -->
@@ -72,7 +105,7 @@
                                 <div class="form-group">
                                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block">Create your account</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block" id="ms_account_jumbotron">Create your account</button>
                                 <button type="button" class="btn btn-default btn-lg btn-block ms_grey_text" id="ms_google_icon_container"><img src="img/google-icon.png" id="ms_google_icon" alt="google_icon">Sign up with Google</button>
                               </form>
                               <h6 class="text-center">By signing up you agree to the <a href=""><u>Terms of Service</u></a>.</h6>
@@ -117,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <h5 class="text-center ms_blue_text">View customer stories ></h5>
+            <h5 class="text-center"><a href="" class="ms_blue_text">View customer stories ></a></h5>
         </section>
     </header>
     <main>
@@ -211,7 +244,7 @@
                             <img src="img/pred-pricing.svg" alt="pricing">
                             <h5 class="ms_dark_blue_text">Predictable pricing</h5>
                             <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
-                            <h5 class="ms_blue_text">Pricing ></h5>
+                            <h5><a href="" class="ms_blue_text">Pricing ></a></h5>
                         </div> 
                     </div>
                     <div class="col-xs-12 col-md-4">
@@ -219,7 +252,7 @@
                             <img src="img/world-class.svg" alt="service">
                             <h5 class="ms_dark_blue_text">World-class service</h5>
                             <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
-                            <h5 class="ms_blue_text">Support ></h5>
+                            <h5><a href="" class="ms_blue_text">Support ></a></h5>
                         </div> 
                     </div>
                     <div class="col-xs-12 col-md-4">
@@ -227,7 +260,7 @@
                             <img src="img/reliable-platform.svg" alt="reliable">
                             <h5 class="ms_dark_blue_text">Reliable platform</h5>
                             <p>More than 100,000  developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-                            <h5 class="ms_blue_text">Security ></h5>
+                            <h5><a href="" class="ms_blue_text">Security ></a></h5>
                         </div> 
                     </div>
                 </div>
@@ -373,7 +406,7 @@
                                     <h4>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</h4>
                                     <h5 class="ms_dark_blue_text">Rick O'Toole</h5>
                                     <h5 class="ms_dark_blue_text ms_weight_500">Co-founder and CTO</h5>
-                                    <h5 class="ms_blue_text">Read Story ></h5>
+                                    <h5><a href="" class="ms_blue_text">Read Story ></a></h5>
                                 </div>
                             </div>
                             <div class="ms_chevron_right col-xs-1 col-md-1">
@@ -389,26 +422,87 @@
                 </div>
             </div>
         </section>
-        <section class="text-center" id="ms_get_started">
+        <section id="ms_get_started" class="text-center" >
             <h2 class="ms_white_text">Get started now.</h2>
             <button class="btn" id="ms_start_btn">Create your account</button>
         </section>
     </main>
     <footer>
-
-    </footer>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <img src="img/logo-small.svg" id="ms_small_logo" alt="logo_small">
+                    <h5>&copy; 2018 DigitalOcean, LLC. All rights reserved.</h5>
+                    <h5 class="ms_weight_500 ms_dark_grey_text">Proudly made in NY</h5>
+                    <ul>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <div class="row" id="ms_footer_right_section">
+                        <div class="col-xs-12 col-xs-12 col-sm-6 col-md-3">
+                            <h5 class="ms_white_text ms_footer_list_title">Company</h5>
+                            <ul>
+                                <li><h5><a href="">About</a></h5></li>
+                                <li><h5><a href="">Leadership</a></h5></li>
+                                <li><h5><a href="">Link</a></h5></li>
+                                <li><h5><a href="">Blog</a></h5></li>
+                                <li><h5><a href="">Careers</a></h5></li>
+                                <li><h5><a href="">Partner Network</a></h5></li>
+                                <li><h5><a href="">Referral Program</a></h5></li>
+                                <li><h5><a href="">Events</a></h5></li>
+                                <li><h5><a href="">Press</a></h5></li>
+                                <li><h5><a href="">Legal & Security</a></h5></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <h5 class="ms_white_text ms_footer_list_title">Products</h5>
+                            <ul>
+                                <li><h5><a href="">Droplets</a></h5></li>
+                                <li><h5><a href="">Spaces</a></h5></li>
+                                <li><h5><a href="">Kubernetes</a></h5></li>
+                                <li><h5><a href="">Load Balancers</a></h5></li>
+                                <li><h5><a href="">Block Storage</a></h5></li>
+                                <li><h5><a href="">Tools & Integrations</a></h5></li>
+                                <li><h5><a href="">One-Click Apps</a></h5></li>
+                                <li><h5><a href="">API</a></h5></li>
+                                <li><h5><a href="">Pricing</a></h5></li>
+                                <li><h5><a href="">Documentation</a></h5></li>
+                                <li><h5><a href="">Release Notes</a></h5></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <h5 class="ms_white_text ms_footer_list_title">Community</h5>
+                            <ul>
+                                <li><h5><a href="">Tutorials</a></h5></li>
+                                <li><h5><a href="">Meetups</a></h5></li>
+                                <li><h5><a href="">Q&A</a></h5></li>
+                                <li><h5><a href="">Write for Donations</a></h5></li>
+                                <li><h5><a href="">Droplets for Demos</a></h5></li>
+                                <li><h5><a href="">Hatch</a></h5></li>
+                                <li><h5><a href="">Shop Swag</a></h5></li>
+                                <li><h5><a href="">Research Program</a></h5></li>
+                                <li><h5><a href="">Currents Research</a></h5></li>
+                                <li><h5><a href="">Open Source</a></h5></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <h5 class="ms_white_text ms_footer_list_title">Support</h5>
+                            <ul>
+                                <li><h5><a href="">Contact Support</a></h5></li>
+                                <li><h5><a href="">FAQ</a></h5></li>
+                                <li><h5><a href="">Network Status</a></h5></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 </body>
